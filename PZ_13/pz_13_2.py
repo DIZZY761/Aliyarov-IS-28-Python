@@ -1,3 +1,5 @@
+#В двумерном списке отрицательные элементы возвести в квадрат.
+
 def square_negatives(matrix):
     for i in range(len(matrix)):
         for j in range(len(matrix[i])):
