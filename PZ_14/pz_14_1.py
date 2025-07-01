@@ -1,7 +1,7 @@
-# Функция для чтения фамилий писателей из файла
+# ФФункция для чтения фамилий писателей из файла
 def read_writer_surnames(filename):
     surnames = []
-    with open('C:\Users\Рустам\Documents\GitHub\Aliyarov-IS-28-Python\PZ_14\writer.txt', 'r', encoding='utf-8') as file:
+    with open('C:/Users/Рустам/Documents/GitHub/Aliyarov-IS-28-Python/PZ_14/writer.txt', 'r', encoding='utf-8') as file:
         for line in file:
             surname = line.strip()  # Удаление пробелов и символов новой строки
             if surname:  # Проверяем, что строка не пустая
@@ -16,7 +16,7 @@ def replace_word(input_filename, output_filename):
     # Замена слова
     modified_content = content.replace('роман', 'произведение')
     
-    with open(output_filename, 'w', encoding='utf-8') as outfile:
+    with open('C:/Users/Рустам/Documents/GitHub/Aliyarov-IS-28-Python/PZ_14/text_with_romans.txt', 'w', encoding='utf-8') as outfile:
         outfile.write(modified_content)
 
 # Основная часть программы
